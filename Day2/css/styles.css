@@ -1,0 +1,112 @@
+html, body {
+    background-color: blanchedalmond;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.profile-pic {
+    width: 100px;
+    height: auto;
+}
+
+#profile {
+    padding: 20px;
+    display: flex;
+    background-color: salmon;
+}
+
+.profile-text {
+    margin-left: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "education experience skills";
+    padding: 30px;
+    max-width:1000px;
+    margin: auto;
+}
+
+.education {
+    grid-area: education;
+    background-color: beige;
+    border: solid black;
+    border-right: none;
+
+}
+
+.experience {
+    grid-area: experience;
+    background-color: beige;
+    border: solid black;
+    border-right: none;
+
+}
+
+.skills {
+    grid-area: skills;
+    background-color: beige;
+    border: solid black;
+
+}
+
+h4 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: royalblue;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.icon {
+    width: 50px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+/* dark mode */
+[dark] body {
+    background-color: rgb(49, 49, 49);
+    min-height: 100%;
+}
+[dark] #profile {
+    background-color: rgb(82, 82, 82);
+}
+
+[dark] .education {
+    background-color: rgb(146, 146, 146);
+    color: seashell;
+    border: solid beige;
+    border-right: none;
+}
+
+[dark] .experience {
+    background-color: rgb(146, 146, 146);
+    color:seashell;
+    border: solid beige;
+    border-right: none;
+}
+
+[dark] .skills {
+    background-color: rgb(146, 146, 146);
+    color:seashell;
+    border: solid beige;
+}
+
+[dark] footer {
+    background-color: rgb(82, 82, 82);
+    color:seashell;
+}
+
+[dark] .icon {
+    color: seashell;
+}
+
+[dark] .profile-text {
+    color:seashell
+}
